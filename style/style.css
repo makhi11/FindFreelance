@@ -1,0 +1,426 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Nngasi */
+.navigasi {
+    width: 100%;
+    background-color: darkgreen;
+    /*padding: 20px 0;*/
+    height: 50px;
+    color: white;
+    box-shadow: 1px 9px 13px 2px black;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.3em;
+    float: left;
+    margin-left: 55px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.navigasi li {
+    float: right;
+    list-style: none;
+    margin-right: 55px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    
+.nav-item a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.nav-item a:hover {
+    font-weight: bolder;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display:none; 
+}
+
+.none {
+    display: none;
+}
+
+
+/*Hamburger Menu*/
+/* 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: -5px;
+    top: -5PX;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+} */
+
+/* Hamburger Animation */
+/* 
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    transform: scale(0);
+} */
+
+
+.container {
+    margin: 0 auto;
+    padding: 40px 40px;
+}
+
+/* Hero */
+.content-hero {
+    width: 100%;
+    background-image: url(../asset/logo_u_know_media_update.png);
+    text-align: center;
+    background-size: cover;
+    height: 650px;
+    border-bottom: 8px solid green;
+    padding: 400px 20px 30px 20px;
+    color: white;
+}
+
+.content-hero h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all 0.8s;
+    text-shadow: 0 7px 1px black;
+}
+
+.btn {
+    padding: 15px 40px;
+    border-radius: 4px;
+    border: 2px solid wheat;
+    color: white;
+}
+
+.CTA {
+    background-color: darkgreen;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.CTA:hover {
+    background-color: mediumseagreen;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+
+/* Content Fitur */
+
+#content-fitur {
+    text-align: center;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.heading-content-fitur{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.flex-column-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-content {
+    flex: auto;
+    width: 25%;
+    transition: all 0.3s;
+}
+
+.flex-content:hover {
+    box-shadow: 0px 14px 33px -7px green;
+    border-radius: 10px;
+}
+
+.card {
+    border: 4px solid green;
+    border-radius: 4px;
+    margin: 0 10px;
+    padding: 20px 10px;
+    box-shadow: 0px 14px 33px -7px rgba(69,189,59,0.73);
+    min-height: 300px;
+}
+
+
+.image-content {
+    max-width: 300px;
+    min-height: 300px;
+}
+
+/* Info Content */
+
+#info-content {
+    text-align: center;
+    height: 300px;
+    background-color: lightgreen;
+}
+
+.detail-info {
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+}
+
+.detail-info p {
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#info-content:hover {
+    background-color: green;
+    
+}
+
+/* Content Team */
+
+#team {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    height: fit-content;
+    width: 100%;
+    }
+
+.flex-column-team {
+    display: flex;
+    flex-direction:column;
+}
+
+.flex-row-team {
+    display:flex;
+    flex-direction:row;
+    flex-grow:1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.flex-team {
+    /* flex-grow:1; */
+    flex-basis: 20%;
+}
+
+.content-team {
+    min-width: 200px;
+    max-height: 300px;
+}
+
+.content-team:hover {
+    box-shadow: 0px 14px 33px -7px green;
+    border-radius: 10px;
+    position: relative;
+    top: -3px;
+    cursor: pointer;
+}
+
+.image-content-team {
+    max-width: 300px;
+    max-height: 200px;
+    padding: 10px 10px;
+}
+
+.text-tema {
+    line-height: 30px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: green;
+    padding: 20px;
+    color: white;
+    position: unset;
+}
+
+/* Responsive Breakpoint */
+
+/* Ukuran Tablet */
+
+@media screen and (max-widht: 800px) {
+    
+    body {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .container {
+    margin: 0 auto;
+    padding: auto auto;
+    }
+
+    .nav-rigth {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 10px;
+        margin-top: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #content-fitur {
+        margin-top: 30px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+
+    .flex-content {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .flex-row-team {
+      flex-direction: column;  
+    }
+
+    .flex-team {
+        width:50%;
+        margin-top: 20px;
+    }
+
+
+    .image-content {
+        max-width: 200px;
+    }
+
+}
+
+/* Ukuran Mobile Iphone Or Android */
+
+@media screen and (max-width: 513px) {
+
+    body {
+        width: 100%;
+    }
+
+    .container {
+    margin: 0 auto;
+    padding: auto auto;
+    }
+
+    .nav-rigth {
+        display: none;
+    }
+
+    .none {    
+        display: block;
+    }
+
+    .menu-icon {
+        margin-right: 30px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        margin-left: 10px;
+        margin-top: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #content-fitur {
+        margin-top: 30px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .heading-content-fitur {
+        font-size: 29px;
+    }
+
+    #info-content {
+        height: fit-content;
+    }
+
+    .detail-info p {
+        width: 100%;
+        font-size: 21px;
+    }
+
+
+    .flex-content {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .flex-row-team {
+      flex-direction: column;  
+    }
+
+    .flex-team {
+        width:100%;
+        margin-top: 20px;
+    }
+
+
+    .image-content {
+        max-width: 200px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+}
